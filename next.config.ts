@@ -13,7 +13,6 @@ const nextConfig = {
   },
   // Add optimizations for development
   reactStrictMode: false, // Consider setting to false in development
-  swcMinify: true,
   modularizeImports: {
     // Optimize imports for @react-pdf and framer-motion
     '@react-pdf/renderer': {
