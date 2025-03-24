@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #EA0029; /* Red Hibbert's exact primary red color */
+  --primary-dark: #C80023;
+  --secondary: #1A2C4E; /* Red Hibbert's exact secondary blue color */
+  --secondary-dark: #0F1A30;
+  --accent: #F8F9FC;
+  --text-light: #667085;
+  --border-color: #E4E7EC;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-border: var(--border-color);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.border-primary {
+  border-color: var(--primary);
+}
+
+.border-secondary {
+  border-color: var(--secondary);
+}
+
+.hover-bg-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.hover-bg-secondary:hover {
+  background-color: var(--secondary-dark);
+}
+
+.border-color {
+  border-color: var(--border-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 600;
+}
