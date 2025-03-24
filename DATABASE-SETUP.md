@@ -10,6 +10,9 @@ This guide will help you set up the database for the Candidates application usin
 4. Create a new query named "Setup Candidates DB"
 5. Copy and paste the contents of `db-setup.sql` from this repository into the SQL Editor
 6. Run the query to set up all necessary tables and triggers
+7. Create another query named "Setup Candidates Table"
+8. Copy and paste the contents of `candidates-setup.sql` from this repository into the SQL Editor
+9. Run the query to set up the candidates table, RLS policies, and triggers
 
 ## Tables Structure
 

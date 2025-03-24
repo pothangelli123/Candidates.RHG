@@ -1,9 +1,9 @@
 {
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/api/admin/login/route": "app/api/admin/login/route.js",
-  "/api/admin/stats/route": "app/api/admin/stats/route.js",
-  "/page": "app/page.js",
+  "/api/candidates/route": "app/api/candidates/route.js",
   "/candidates/page": "app/candidates/page.js",
   "/admin/login/page": "app/admin/login/page.js",
-  "/admin/page": "app/admin/page.js"
+  "/admin/page": "app/admin/page.js",
+  "/admin/add-candidate/page": "app/admin/add-candidate/page.js",
+  "/candidates/[id]/page": "app/candidates/[id]/page.js"
 }

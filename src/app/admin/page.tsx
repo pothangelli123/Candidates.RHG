@@ -85,12 +85,34 @@ export default function AdminPage() {
     <div className="container mx-auto px-4 py-10 max-w-7xl">
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-3xl font-bold text-secondary">Admin Dashboard</h1>
-        <Link
-          href="/candidates"
-          className="text-sm font-medium text-secondary hover:text-primary transition-colors"
-        >
-          View Candidates
-        </Link>
+        <div className="flex gap-4">
+          <Link
+            href="/admin/add-candidate"
+            className="inline-flex items-center px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors"
+          >
+            <svg 
+              className="h-4 w-4 mr-2" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M12 4v16m8-8H4" 
+              />
+            </svg>
+            Add Candidate
+          </Link>
+          <Link
+            href="/candidates"
+            className="text-sm font-medium text-secondary hover:text-primary transition-colors self-center"
+          >
+            View Candidates
+          </Link>
+        </div>
       </div>
       
       {/* Welcome section */}
